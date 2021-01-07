@@ -1,2 +1,2 @@
-# travelwiz_project1
+#advanturous wanderer project 1
 project1_destination_quiz
