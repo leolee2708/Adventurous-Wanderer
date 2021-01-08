@@ -9,7 +9,7 @@ $(document).ready (function() {
           method: "GET"
         }).then(function(response){
             console.log(response);
-       }
+       })
 //     let map;
 // function initMap() {
 //   map = new google.maps.Map(document.getElementById("map"), {
@@ -22,5 +22,4 @@ $(document).ready (function() {
 // $.ajax({  url: 'https://api.allorigins.win/get?url=' + encodeURIComponent(queryURL),method: 'GET'}).then(function(data){console.log(data.contents)});
 
 // initMap();
-}
 })
