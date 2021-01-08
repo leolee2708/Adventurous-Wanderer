@@ -18,7 +18,7 @@
  #map {
     height: 150px;
   } 
-=======
+
   
 .sticky-footer {
     position: absolute;
@@ -29,4 +29,16 @@
   }
 
 
+.icon {
+    margin: 10px;
+}
 
+.sticky-footer {
+    position: fixed;
+    padding : 10px 10px 0px 10px;
+    bottom  : 0;
+    width   : 100%;
+    height  : 40px;
+    color   : #ede1d1;
+
+}

@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 08/01/2021 16:43
+  	Creation date: 08/01/2021 18:52
   	*/
 
 @font-face {
@@ -40,3 +40,26 @@ margin-left: 20px;
 .flaticon-cold:before { content: "\f107"; }
 .flaticon-hot:before { content: "\f108"; }
 .flaticon-thermometer:before { content: "\f109"; }
+.flaticon-coins-1:before { content: "\f10a"; }
+.flaticon-loupe:before { content: "\f10b"; }
+.flaticon-search-location:before { content: "\f10c"; }
+.flaticon-hot-1:before { content: "\f10d"; }
+.flaticon-snowflake:before { content: "\f10e"; }
+.flaticon-online-shopping:before { content: "\f10f"; }
+.flaticon-shopping-bag:before { content: "\f110"; }
+.flaticon-dance:before { content: "\f111"; }
+.flaticon-microphone:before { content: "\f112"; }
+.flaticon-karaoke:before { content: "\f113"; }
+.flaticon-museum:before { content: "\f114"; }
+.flaticon-masks:before { content: "\f115"; }
+.flaticon-art-deco:before { content: "\f116"; }
+.flaticon-hiking:before { content: "\f117"; }
+.flaticon-hiking-1:before { content: "\f118"; }
+.flaticon-bike:before { content: "\f119"; }
+.flaticon-bicycle:before { content: "\f11a"; }
+.flaticon-concert:before { content: "\f11b"; }
+.flaticon-stage:before { content: "\f11c"; }
+.flaticon-heart:before { content: "\f11d"; }
+.flaticon-couple:before { content: "\f11e"; }
+.flaticon-circus-tent:before { content: "\f11f"; }
+.flaticon-ferris-wheels:before { content: "\f120"; }
