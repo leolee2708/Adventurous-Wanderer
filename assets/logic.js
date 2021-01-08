@@ -1,20 +1,10 @@
 $(document).ready (function() {
-    // Global var
-      // let url =  "https://maps.googleapis.com/maps/api/js?";
-      //  let apikey = "AIzaSyA_LwhQsJXpaTsL-C1ZQEYb93z7eP1Asog";
-      // let cityName;
-    //   let queryURL = "https://maps.googleapis.com/maps/api/js?key=AIzaSyA_LwhQsJXpaTsL-C1ZQEYb93z7eP1Asog&callback=initMap";
-    //   // let map;
-    // $.ajax({
-    //       url: queryURL,
-    //       method: "GET"
-    //     }).then(function(response){
-    //         console.log(response);
-    //    });
+    let lng;
+    let lat;
     let map;
   function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 28.538336, lng: -81.379234 },
+    center: { lat, lng},
     zoom: 8,
   });
   }
