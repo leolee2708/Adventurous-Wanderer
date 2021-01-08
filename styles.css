@@ -15,9 +15,10 @@
 
 }
 
-.map {
+ .map {
     height: 150px;
-}
+  } 
+
   
 .sticky-footer {
     position: fixed;
@@ -28,9 +29,9 @@
     color   : #ede1d1;
 
 } 
-
-
 .icon {
     margin: 10px;
 }
+
+
 
