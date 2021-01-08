@@ -5,3 +5,12 @@
     background-color: #ede1d1
 }
 
+.card {
+    text-align: center;
+    margin    : 0 auto;
+
+    float: none;
+
+    margin-bottom: 10px;
+
+}
