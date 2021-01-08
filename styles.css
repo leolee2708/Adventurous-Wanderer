@@ -14,6 +14,11 @@
     margin-bottom: 10px;
 
 }
+
+ #map {
+    height: 150px;
+  } 
+=======
   
 .sticky-footer {
     position: absolute;
