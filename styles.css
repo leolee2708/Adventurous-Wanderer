@@ -15,9 +15,8 @@
 
 }
 
- #map {
+#map {
     height: 150px;
-  } 
 
   
 .sticky-footer {
@@ -29,4 +28,7 @@
   }
 
 
+.icon {
+    margin: 10px;
+}
 

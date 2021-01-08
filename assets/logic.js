@@ -1,5 +1,5 @@
 $(document).ready (function() {
-    // Global var
+
     let lng;
     let lat;
     let map;
@@ -70,4 +70,3 @@ $(document).ready (function() {
 
 
 
-})
