@@ -15,9 +15,15 @@
 
 }
 
+
  .map {
     height: 150px;
   } 
+
+
+.map {
+    height: 300px;
+}
 
   
 .sticky-footer {
