@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+     <!-- Flaticon -->
+     <link rel="stylesheet" href="font/flaticon.css">
+     <title>Adventerous Wanderer</title>
+     <link rel="shortcut icon" type="image/png" href="Icons/travel.png">
+    <link rel="stylesheet" href="test.css">
+    
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Adventerous Wanderer</h1>
+        </div>
+    </div>
+    <form>
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">What type of region are you looking for?</h5>
+                <button class="btn"><i class="flaticon-island"></i></button>
+                <button class="btn"><i class="flaticon-mountains"></i></button>
+                <button class="btn"><i class="flaticon-land"></i></button>
+                <button class="btn"><i class="flaticon-cityscape"></i></button>
+
+            </div>
+        </div>
+
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">Whats your budget?</h5>
+                <button class="btn"><i class="flaticon-coins-1"></i></button>
+                <button class="btn"><i class="flaticon-money"></i></button>
+                <button class="btn"><i class="flaticon-money-1"></i></button>
+
+            </div>
+        </div>
+        <div class="card w-75">
+            <div class="card-body">
+                <h5 class="card-title">Whats your ideal climate?</h5>
+                <button class="btn"><i class="flaticon-hot"></i></button>
+                <button class="btn"><i class="flaticon-cold"></i></button>
+                <button class="btn"><i class="flaticon-thermometer"></i></button>
+
+            </div>
+        </div>
+        <div class="card w-75">
+            <div class="card-body">
+
+
+                <h5 class="card-title">What do you want to do?</h5>
+                <button class="btn"><i class="flaticon-shopping-bag"></i></button>
+                <button class="btn"><i class="flaticon-dance"></i></button>
+                <button class="btn"><i class="flaticon-microphone"></i></button>
+                <button class="btn"><i class="flaticon-museum"></i></button>
+                <button class="btn"><i class="flaticon-masks"></i></button>
+                <button class="btn"><i class="flaticon-hiking"></i></button>
+                <button class="btn"><i class="flaticon-bike"></i></button>
+                <button class="btn"><i class="flaticon-concert"></i></button>
+                <button class="btn"><i class="flaticon-heart"></i></button>
+                <button class="btn"><i class="flaticon-ferris-wheels"></i></button>
+
+
+            </div>
+        </div>
+
+        <div class="card w-5">
+            <div class="card-body">
+
+                <!-- <div>
+                    <button class="btn" class="icon" id="map"><i class="flaticon-search-location"></i></button>
+                </div> -->
+            </div>
+        </div>
+    </form>
+    <div id='map' style='width: 300px; height: 300px;'></div>
+    <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYW1hbmRhbG40MzExIiwiYSI6ImNranFvNWI4MjNnMHoyem1wNXNlcmxxYXkifQ.2bLq2cmQPF47IqkhJYsysg';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());
+    </script>
+
+<footer class="footer text-center bg-primary sticky-footer">
+    <div class="container" id="footer-container">
+        <span class="text-muted">Copyright &copy; 2021
+            <a class="text-info" href="https://github.com/leolee2708/Adventurous-Wanderer">Ashlyn, Amanda, Leo,
+                Shayam</span>
+    </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+        <script src="test.js"></script>
+</body>
+
+</html>
