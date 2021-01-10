@@ -1,3 +1,4 @@
+/* #mapid { height: 180px; } */
 .jumbotron {
     text-align      : center;
     font-family     : 'Dancing Script', cursive;
@@ -17,8 +18,8 @@
 
 .globalMap {
     height: 300px; 
-
 }
+  
 .footer-container {
     position: fixed;
     padding: 10px 10px 0px 10px;
@@ -28,9 +29,8 @@
     color: #ede1d1;
 
 } 
+
+
 .icon {
     margin: 10px;
 }
-
-
-
