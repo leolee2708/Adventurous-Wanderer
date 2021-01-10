@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 08/01/2021 18:52
+    Creation date: 10/01/2021 19:46
     */
 
     @font-face {
@@ -70,6 +70,8 @@
 .flaticon-couple:before { content: "\f11e"; }
 .flaticon-circus-tent:before { content: "\f11f"; }
 .flaticon-ferris-wheels:before { content: "\f120"; }
+.flaticon-sailing:before { content: "\f121"; }
+.flaticon-surfboard:before { content: "\f122"; }
     
     $font-Flaticon-island: "\f100";
     $font-Flaticon-mountains: "\f101";
@@ -104,3 +106,5 @@
     $font-Flaticon-couple: "\f11e";
     $font-Flaticon-circus-tent: "\f11f";
     $font-Flaticon-ferris-wheels: "\f120";
+    $font-Flaticon-sailing: "\f121";
+    $font-Flaticon-surfboard: "\f122";
