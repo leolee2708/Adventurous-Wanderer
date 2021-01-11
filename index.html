@@ -36,12 +36,13 @@
     <link rel="stylesheet" href="font/flaticon.css">
     <title>Adventerous Wanderer</title>
     <link rel="shortcut icon" type="image/png" href="Icons/travel.png">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../Adventurous-Wanderer/assets/logic.js" > 
+
+    <link rel="stylesheet" href="../Adventurous-Wanderer/assets/logic.js">
 </head>
-=======
-    <link rel="stylesheet" href="./assets/logic.js" </head>
->>>>>>> 0b2b13bb2ace5d116ef1825d2295d003a197fb0a
+
+<link rel="stylesheet" href="./assets/logic.js" />
+</head>
+
 
 <body>
     <section class="hero is-primary">
@@ -61,10 +62,14 @@
                 <p class="title">What type of region are you looking for?</p>
                 <div>
                     <footer class="card-footer">
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-island"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-mountains"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-cityscape"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-land"></i></button></p>
+                        <p class="card-footer-item"><button id="island" class="btn"><i
+                                    class="flaticon-island"></i></button></p>
+                        <p class="card-footer-item"><button id="peak" class="btn"><i
+                                    class="flaticon-mountains"></i></button></p>
+                        <p class="card-footer-item"><button id="city" class="btn"><i
+                                    class="flaticon-cityscape"></i></button></p>
+                        <p class="card-footer-item"><button id="land" class="btn"><i class="flaticon-land"></i></button>
+                        </p>
 
                     </footer>
                 </div>
@@ -77,9 +82,12 @@
                 <h5 class="title">Whats your budget?</h5>
                 <div>
                     <footer class="card-footer">
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-coins-1"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-money"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-money-1"></i></button></p>
+                        <p class="card-footer-item"><button id="cheap" class="btn"><i
+                                    class="flaticon-coins-1"></i></button></p>
+                        <p class="card-footer-item"><button id="budget" class="btn"><i
+                                    class="flaticon-money"></i></button></p>
+                        <p class="card-footer-item"><button id="rich" class="btn"><i
+                                    class="flaticon-money-1"></i></button></p>
 
                     </footer>
                 </div>
@@ -91,8 +99,10 @@
                 <h5 class="title">Whats your ideal climate?</h5>
                 <div>
                     <footer class="card-footer">
-                        <p class="card-footer-item"> <button class="btn"><i class="flaticon-hot"></i></button></p>
-                        <p class="card-footer-item"> <button class="btn"><i class="flaticon-cold"></i></button></p>
+                        <p class="card-footer-item"> <button id="hot" class="btn"><i class="flaticon-hot"></i></button>
+                        </p>
+                        <p class="card-footer-item"> <button id="cold" class="btn"><i
+                                    class="flaticon-cold"></i></button></p>
 
 
 
@@ -108,49 +118,49 @@
                 <div>
                     <footer class="card-footer">
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="shopping" class="btn">
                                 <i class="flaticon-shopping-bag">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="dance" class="btn">
                                 <i class="flaticon-dance">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="mic" class="btn">
                                 <i class="flaticon-microphone">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="culture" class="btn">
                                 <i class="flaticon-museum">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="hike" class="btn">
                                 <i class="flaticon-hiking">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="bike" class="btn">
                                 <i class="flaticon-bike">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="love" class="btn">
                                 <i class="flaticon-heart">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button id="swim" class="btn">
                                 <i class="flaticon-surfboard">
                                 </i></button>
                         </p>
@@ -203,40 +213,53 @@
 
         map.addControl(new mapboxgl.NavigationControl());
     </script>
-
-<<<<<<< HEAD
-            <div>
-                <button id="submitResults" class="btn" class="icon"><i class="flaticon-search-location"></i></button>
-                <p id= "currentCity">weather appears here </p>
+<!-- weather goes here -->
+<div class="col-md-8 px-4" id="weather-container">
+    <div class="row pt-5" id="error-div" style="display: none;">
+        <h2 class="font-weight-bold" id="error">City not found.</h2>
+    </div>
+    <div class="row pt-3" id="current-forecast" style="">
+        <div class="col-md-12 border">
+            <div class="d-flex align-items-center pt-4" id="city-name-container">
+                <h2 class="font-weight-bold" id="city-name">Sanford (1/10/2021) </h2>
+                <div class="weather-image-container">
+                    <img alt="weather-image" id="weather-image" src="http://openweathermap.org/img/wn/01n.png">
+                </div>
+            </div>
+            <div class="pb-4" id="current-weather-container">
+                <div id="temperature"><b>Temperature: </b>50 °F</div>
+                <div id="humidity"><b>Humidity: </b>82%</div>
+                <div id="wind-speed"><b>Wind Speed: </b>4.45 MPH</div>
+                <div id="uv-index"><b>UV Index: </b><span class="badge badge-pill badge-light" id="uvi-badge" style="background-color: yellow;">3.89</span></div>
             </div>
         </div>
-=======
-    </footer>
-    </form>
+    </div>
+    
+        </footer>
+        </form>
 
-    <footer class="footer text-center bg-primary sticky-footer">
+        <footer class="footer text-center bg-primary sticky-footer">
 
-        <div class="container" id="footer-container">
-            <span class="text-bold">Copyright &copy; 2021
-                <a class="text-muted" href="https://github.com/leolee2708/Adventurous-Wanderer">Made with ❤️️ by
-                    Ashlyn,
-                    Amanda, Leo,
-                    Shayam</a></span>
->>>>>>> 0b2b13bb2ace5d116ef1825d2295d003a197fb0a
-        </div>
-    </footer>
+            <div class="container" id="footer-container">
+                <span class="text-bold">Copyright &copy; 2021
+                    <a class="text-muted" href="https://github.com/leolee2708/Adventurous-Wanderer">Made with ❤️️ by
+                        Ashlyn,
+                        Amanda, Leo,
+                        Shayam</a></span>
+            </div>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-        crossorigin="anonymous"></script>
-
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+            crossorigin="anonymous"></script>
 
 
-    <!-- <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest-maps.js"></script> -->
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+
+        <!-- <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest-maps.js"></script> -->
+        <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
