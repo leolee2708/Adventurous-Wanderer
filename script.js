@@ -11,3 +11,10 @@ function setRegion(region){
     console.log(region);
     console.log(myRegion);
 }
+function searchcheapBeach(){
+let cheapBeach = beach.filter(function(e){
+    return e.budget = "cheap";
+});
+
+}
+console.log(cheapBeach);
