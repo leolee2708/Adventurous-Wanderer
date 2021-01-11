@@ -8,7 +8,6 @@ var myRegion = null;
 function setRegion(region){
     
     myRegion = region;
-    console.log(region);
     console.log(myRegion);
 }
 function searchcheapBeach(){
