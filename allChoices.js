@@ -12,7 +12,7 @@ var allDestinations = [
         cost: "rich",
         isCold: false,
         isHot: true,
-        activities: ["mic", "hike", "bike", "swim"],
+        activities: ["mic", "hike", "bike", "swim"]
     },
 
     {
@@ -23,17 +23,17 @@ var allDestinations = [
         cost: "rich",
         isCold: true,
         isHot: false,
-        activities: ["mic", "hike", "bike", "swim"],
+        activities: ["mic", "hike", "bike", "swim"]
     },
     {
         name: "Isla Harbour, Bahamas",
         region: "beach",
         lat: "25.5070° N",
         long: "76.6321 W",
-        cost: "rich",
+        cost: "budget",
         isCold: false,
         isHot: true,
-        activities: ["hike", "bike", "swim", "culture"],
+        activities: ["hike", "bike", "swim", "culture"]
 
     },
     {
@@ -44,7 +44,7 @@ var allDestinations = [
         cost: "rich",
         isCold: false,
         isHot: true,
-        activities: ["hike", "bike", "swim", "culture"],
+        activities: ["hike", "bike", "swim", "culture"]
 
     },
     {
@@ -55,7 +55,7 @@ var allDestinations = [
         cost: "cheap",
         isCold: false,
         isHot: true,
-        activities: ["hike", "bike", "swim", "culture"],
+        activities: ["hike", "bike", "swim", "culture"]
 
     },
     {
@@ -63,10 +63,10 @@ var allDestinations = [
         region: "beach",
         lat: "43.4832 N",
         long: "1.5586 W",
-        cost: "cheap",
+        cost: "budget",
         isCold: false,
         isHot: true,
-        activities: ["hike", "bike", "swim", "culture", "shopping"],
+        activities: ["hike", "bike", "swim", "culture", "shopping"]
 
     },
     {
@@ -74,10 +74,10 @@ var allDestinations = [
         region: "beach",
         lat: "16.7705 S",
         long: "145.6717 E",
-        cost: "budget",
+        cost: "rich",
         isCold: false,
         isHot: true,
-        activities: ["hike", "bike", "swim", "culture"],
+        activities: ["hike", "bike", "swim", "culture"]
 
     },
     {
@@ -88,7 +88,7 @@ var allDestinations = [
         cost: "budget",
         isCold: false,
         isHot: true,
-        activities: ["mic", "hike", "bike", "swim", "culture"],
+        activities: ["mic", "hike", "bike", "swim", "culture"]
 
     },
     {
@@ -99,7 +99,7 @@ var allDestinations = [
         cost: "budget",
         isCold: false,
         isHot: true,
-        activities: ["mic", "hike", "bike", "swim", "culture"],
+        activities: ["mic", "hike", "bike", "swim", "culture"]
 
     },
 
@@ -187,14 +187,15 @@ var allDestinations = [
         activities: ["shopping", "dance", "culture", "bike"]
     },
     {
-        name: "Torshavn, Faroe Islands",
+
+        name: "Lucerna, Switzerland",
         region: "city",
-        lat: "62.0107° N",
-        long: "6.7741° W",
+        lat: "47.0502° N",
+        long: "8.3093° E",
         cost: "rich",
         isCold: true,
         isHot: false,
-        activities: ["shopping", "dance", "culture", "hike", "bike", "love", "swim"]
+        activities: ["mic", "hike", "bike", "swim"]
     },
     {
         name: "Amsterdam, Netherlands",
@@ -206,7 +207,7 @@ var allDestinations = [
         isHot: true,
         activities: ["shopping", "dance", "culture", "bike",]
     },
-    // countryside
+    // COUNTRYSIDE starts
     {
         name: "Stowe, Vermont",
         region: "Countryside",
@@ -307,96 +308,97 @@ var allDestinations = [
         isHot: false,
         activities: ["shopping", "romance", "culture"]
     },
-// mountain
-{
-    name : "",
-    region : "mountain",
-    lat : "47.0502° N",
-    long : "8.3093° E",
-    cost : "rich",
-    isCold : true ,
-    isHot : false,
-    activities : ["Live Music","Hiking", "Biking", "Water Adventure"],
-},
-{
-    name : "British Columbia, Canada" ,
-    region : "mountain",
-    lat : "50.1163° N",
-    long : "122.9574° W",
-    cost : "Budget",
-    isCold : true,
-    isHot : false,
-    activities : ["shopping", "dancing"],
-},
-{
-    name : "Torla-Ordesa, Spain" ,
-    region : "mountain",
-    lat : "42.6287° N",
-    long : "122.9574° W",
-    cost : "rich",
-    isCold : true ,
-    isHot : true ,
-    activities : ["hiking", "biking", "dancing"],
-},
-{
-    name : "Riobamba" ,
-    region : "mountain",
-    lat : "78.6589° W",
-    long : "1.6650° S",
-    cost : "cheap",
-    isCold : true,
-    isHot : true ,
-    activities : ["biking","shopping"],
-},
-{
-    name : "Hallstatt, Austria" ,
-    region : "mountain",
-    lat : "47.33° N",
-    long : "13.38° E",
-    cost : "rich",
-    isCold : true,
-    isHot :  false,
-    activities : ["shopping", "hiking"],
-},
-{
-    name : "San Pietro, Italy" ,
-    region : "mountain",
-    lat : "46.6406° N",
-    long : "11.6849° E",
-    cost : "rich",
-    isCold : false,
-    isHot :  true,
-    activities : ["biking", "love","mic"],
-},
-{
-    name : "Lake Placid, NY" ,
-    region : "mountain",
-    lat : "44.2795° N",
-    long : "73.9799° W",
-    cost : "budget",
-    isCold : true,
-    isHot :  false,
-    activities : ["culture", "hiking"],
-},
-{
-    name : "Gifu, Japan" ,
-    region : "mountain",
-    lat : "36.2710° N",
-    long : "136.8986° E",
-    cost : "budget",
-    isCold : true,
-    isHot :  false,
-    activities : ["shopping", "culture"],
-},
-{
-    name : "Olden, Norway" ,
-    region : "mountain",
-    lat : "61.8350° N",
-    long : "6.8066° E",
-    cost : "cheap",
-    isCold : true,
-    isHot :  true,
-    activities : ["surf", "hiking", "biking"],
-}
+    // MOUNTAIN starts
+    {
+        name: "Torshavn, Faroe Islands",
+        region: "mountain",
+        lat: " 62.008827° N",
+        long: "6.770994 ° W",
+        cost: "rich",
+        isCold: true,
+        isHot: false,
+        activities: ["shopping", "dance", "culture", "hike", "bike", "love", "swim"]
+    },
+
+    {
+        name: "British Columbia, Canada",
+        region: "mountain",
+        lat: "50.1163° N",
+        long: "122.9574° W",
+        cost: "Budget",
+        isCold: true,
+        isHot: false,
+        activities: ["shopping", "culture", "hike", "bike"]
+    },
+    {
+        name: "Torla-Ordesa, Spain",
+        region: "mountain",
+        lat: "42.6287° N",
+        long: "122.9574° W",
+        cost: "rich",
+        isCold: true,
+        isHot: true,
+        activities: ["dance", "hike", "bike"]
+    },
+    {
+        name: "Riobamba, Ecuador",
+        region: "mountain",
+        lat: "78.6589° W",
+        long: "1.6650° S",
+        cost: "cheap",
+        isCold: true,
+        isHot: true,
+        activities: ["shoppping", "bike"]
+    },
+    {
+        name: "Hallstatt, Austria",
+        region: "mountain",
+        lat: "47.33° N",
+        long: "13.38° E",
+        cost: "rich",
+        isCold: true,
+        isHot: false,
+        activities: ["shopping", "mic", "hike", "bike", "love"]
+    },
+    {
+        name: "San Pietro, Italy",
+        region: "mountain",
+        lat: "46.6406° N",
+        long: "11.6849° E",
+        cost: "rich",
+        isCold: false,
+        isHot: true,
+        activities: ["mic", "bike", "love"]
+    },
+    {
+        name: "Lake Placid, New York",
+        region: "mountain",
+        lat: "44.2795° N",
+        long: "73.9799° W",
+        cost: "budget",
+        isCold: true,
+        isHot: false,
+        activities: ["culture", "hike", "bike", "swim"]
+    },
+    {
+        name: "Gifu, Japan",
+        region: "mountain",
+        lat: "36.2710° N",
+        long: "136.8986° E",
+        cost: "budget",
+        isCold: true,
+        isHot: false,
+        activities: ["shopping", "culture", "bike", "hike"]
+    },
+    {
+        name: "Olden, Norway",
+        region: "mountain",
+        lat: "61.8350° N",
+        long: "6.8066° E",
+        cost: "cheap",
+        isCold: true,
+        isHot: true,
+        activities: ["hike", "bike", "swim"]
+    }
 
 ]
