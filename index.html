@@ -56,10 +56,10 @@
                 <p class="title">What type of region are you looking for?</p>
                 <div>
                     <footer class="card-footer">
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-island"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-mountains"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-cityscape"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-land"></i></button></p>
+                        <p class="card-footer-item"><a href="javascript:void(0);" onclick="setRegion('island')"><button type="button" id="island" class="btn"><i class="flaticon-island"></i></button></a></p>
+                        <p class="card-footer-item"><button type="button" id="peak" class="btn" onclick="setRegion('mountain')"><i class="flaticon-mountains"></i></button></p>
+                        <p class="card-footer-item"><button type="button" id="city" class="btn" onclick="setRegion('city')"><i class="flaticon-cityscape"></i></button></p>
+                        <p class="card-footer-item"><button type="button" id="land" class="btn" onclick="setRegion('land')"><i class="flaticon-land"></i></button></p>
 
                     </footer>
                 </div>
@@ -72,9 +72,9 @@
                 <h5 class="title">Whats your budget?</h5>
                 <div>
                     <footer class="card-footer">
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-coins-1"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-money"></i></button></p>
-                        <p class="card-footer-item"><button class="btn"><i class="flaticon-money-1"></i></button></p>
+                        <p class="card-footer-item"><button type="button" id="cheap" class="btn"><i class="flaticon-coins-1"></i></button></p>
+                        <p class="card-footer-item"><button type="button" id="budget" class="btn"><i class="flaticon-money"></i></button></p>
+                        <p class="card-footer-item"><button type="button" id="rich" class="btn"><i class="flaticon-money-1"></i></button></p>
 
                     </footer>
                 </div>
@@ -86,8 +86,8 @@
                 <h5 class="title">Whats your ideal climate?</h5>
                 <div>
                     <footer class="card-footer">
-                        <p class="card-footer-item"> <button class="btn"><i class="flaticon-hot"></i></button></p>
-                        <p class="card-footer-item"> <button class="btn"><i class="flaticon-cold"></i></button></p>
+                        <p class="card-footer-item"> <button type="button" id="hot" class="btn"><i class="flaticon-hot"></i></button></p>
+                        <p class="card-footer-item"> <button type="button" id="cold" class="btn"><i class="flaticon-cold"></i></button></p>
 
 
 
@@ -103,49 +103,49 @@
                 <div>
                     <footer class="card-footer">
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="shopping" class="btn">
                                 <i class="flaticon-shopping-bag">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="dance" class="btn">
                                 <i class="flaticon-dance">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="mic" class="btn">
                                 <i class="flaticon-microphone">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="culture" class="btn">
                                 <i class="flaticon-museum">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="hike" class="btn">
                                 <i class="flaticon-hiking">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="bike" class="btn">
                                 <i class="flaticon-bike">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="love" class="btn">
                                 <i class="flaticon-heart">
                                 </i></button>
                         </p>
 
                         <p class="card-footer-item">
-                            <button class="btn">
+                            <button type="button" id="swim" class="btn">
                                 <i class="flaticon-surfboard">
                                 </i></button>
                         </p>
@@ -163,7 +163,7 @@
 
                     <div>
                         <footer class="card-footer">
-                            <p class="card-footer-item"><button class="btn" class="icon"><i
+                            <p class="card-footer-item"><button type="button" class="btn" class="icon"><i
                                         class="flaticon-search-location"></i></button></p>
 
                         </footer>
@@ -220,7 +220,7 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 
-
+    <script src="script.js"></script>
 
     <!-- <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest-maps.js"></script> -->
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
