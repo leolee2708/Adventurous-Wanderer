@@ -7,6 +7,7 @@ const notificationElement = document.querySelector(".notification");
 // var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 let lng;
 let lat;
+let name;
 
 
 let beach = ["21.8733° N, 159.4542° W", "20.7370° N, 86.9688° W", "50.2246° N, 3.7846° W", "25.5070° N, 76.6321° W", "16.5414° S, 151.7376° W", "22.9871° S, 43.2048° W", "16.7705° S, 145.6717° E", "43.4832° N, 1.5586° W", "4.3715° S, 55.8272° E", "43.2677° N, 6.6407° E"];
@@ -93,7 +94,10 @@ function randomChoice() {
     // grab the coordinates
     lat = userInterestedDestinations[randomIndex].lat
     lng = userInterestedDestinations[randomIndex].long
-    console.log(lng, lat);
+    console.log(long, lat);
+    $("#demo").text(JSON.stringify(lat));
+    $("#demo").text(JSON.stringify(long));
+    
 
     // Call the MAP function and pass the (lat, lng) variables
 }
