@@ -20,7 +20,7 @@ var allDestinations = [
         region: "beach",
         lat: "50.2246° N",
         long: "3.7846° W",
-        cost: "rich",
+        cost: "budget",
         isCold: true,
         isHot: false,
         activities: ["mic", "hike", "bike", "swim"]
@@ -30,7 +30,7 @@ var allDestinations = [
         region: "beach",
         lat: "25.5070° N",
         long: "76.6321 W",
-        cost: "budget",
+        cost: "cheap",
         isCold: false,
         isHot: true,
         activities: ["hike", "bike", "swim", "culture"]
@@ -85,7 +85,7 @@ var allDestinations = [
         region: "beach",
         lat: "4.3715 S",
         long: "55.8272 E",
-        cost: "budget",
+        cost: "cheap",
         isCold: false,
         isHot: true,
         activities: ["mic", "hike", "bike", "swim", "culture"]
@@ -181,7 +181,7 @@ var allDestinations = [
         region: "city",
         lat: "55.7558° N",
         long: "37.6173° E",
-        cost: "rich",
+        cost: "budget",
         isCold: true,
         isHot: false,
         activities: ["shopping", "dance", "culture", "bike"]
@@ -192,7 +192,7 @@ var allDestinations = [
         region: "city",
         lat: "47.0502° N",
         long: "8.3093° E",
-        cost: "rich",
+        cost: "cheap",
         isCold: true,
         isHot: false,
         activities: ["mic", "hike", "bike", "swim"]
@@ -325,7 +325,7 @@ var allDestinations = [
         region: "mountain",
         lat: "50.1163° N",
         long: "122.9574° W",
-        cost: "Budget",
+        cost: "budget",
         isCold: true,
         isHot: false,
         activities: ["shopping", "culture", "hike", "bike"]
