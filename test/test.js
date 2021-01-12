@@ -219,18 +219,6 @@ temperatureElement.addEventListener("click", function (x) {
     }
 })
 
-// temperatureElement.addEventListener("click", function (x) {
-//     if (weather.termperature.value === undefined) return;
 
-//     if (weather.temperature.unit == "celsius") {
-//         let fahrenheit = CtoF(weather.temperature.value);
-//         fahrenheit = Math.floor(fahrenheit);
-//         temperatureElement.innerHTML = `${fahrenheit}°<span>F</span>`;
-//         weather.temperature.unit = "fahrenheit";
-//     } else {
-//         temperatureElement.innerHTML = `${weather.temperature.value}'<span>C</span>`;
-//         weather.temperature.unit = "celsius"
-//     }
-// })
 
 
