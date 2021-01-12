@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
 
 <head>
@@ -94,6 +94,41 @@
 
     map.addControl(new mapboxgl.NavigationControl());
     </script>
+    div class="container-fluid h-100">
+    <div class="row min-vh-100">
+      <div class="col-md-4 bg-light">
+        <div class="row">
+          <div class="col-md-12 py-3" id="current-location-container">
+            <div class="d-flex align-text-middle justify-content-between">
+              <h6 class="mt-2 font-weight-bold">
+                Current Location Forecast:
+              </h6>
+              <button
+                class="btn btn-success btn-sm"
+                id="current-location-button"
+              >
+                <i class="fas fa-map-marker-alt"></i>
+                Get Location
+              </button>
+            </div>
+            <div
+              class="card text-white bg-secondary mt-3"
+              id="current-location-weather"
+            >
+              <div class="card-body pt-2">
+                <h5 class="card-title" id="current-location"></h5>
+                <div class="weather-image-container">
+                  <img
+                    alt="current-locationweather-image"
+                    id="weather-image-current-location"
+                  />
+                </div>
+                <p class="card-text" id="temp-current-location"></p>
+                <p class="card-text" id="humidity-current-location"></p>
+              </div>
+            </div>
+          </div>
+        </div>
 
 <footer class="footer text-center bg-primary sticky-footer">
     <div class="container" id="footer-container">
