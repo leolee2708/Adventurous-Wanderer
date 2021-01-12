@@ -400,3 +400,17 @@ var allDestinations = [
 }
 
 ]
+var userChoices =
+ {
+
+    "region" :  "",
+    "cost" : "",
+    "temp" : "",
+    "activities" : "",
+
+}
+userChoices.region
+
+
+
+
