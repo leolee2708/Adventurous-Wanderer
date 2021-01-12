@@ -210,7 +210,7 @@ var allDestinations = [
     // COUNTRYSIDE starts
     {
         name: "Stowe, Vermont",
-        region: "Countryside",
+        region: "land",
         lat: "44.46",
         long: "72.68",
         cost: "budget",
@@ -220,7 +220,7 @@ var allDestinations = [
     },
     {
         name: "Isle of Mull, Scotland",
-        region: "Countryside",
+        region: "land",
         lat: "56°37",
         long: "76°04",
         cost: "rich",
@@ -230,7 +230,7 @@ var allDestinations = [
     },
     {
         name: "Bali, Indonesia",
-        region: "Countryside",
+        region: "land",
         lat: "8.34",
         long: "115.09",
         cost: "rich",
@@ -240,7 +240,7 @@ var allDestinations = [
     },
     {
         name: "Carlingford, Ireland",
-        region: "Countryside",
+        region: "land",
         lat: "54.04",
         long: "6.19",
         cost: "rich",
@@ -250,7 +250,7 @@ var allDestinations = [
     },
     {
         name: "Saratoga, Wyoming",
-        region: "Countryside",
+        region: "land",
         lat: "41.45",
         long: "106.80",
         cost: "budget",
@@ -260,7 +260,7 @@ var allDestinations = [
     },
     {
         name: "Napa, California",
-        region: "Countryside",
+        region: "land",
         lat: "38.29",
         long: "122.28",
         cost: "rich",
@@ -270,7 +270,7 @@ var allDestinations = [
     },
     {
         name: "Essex, United Kingdom",
-        region: "Countryside",
+        region: "land",
         lat: "51.57",
         long: "0.48",
         cost: "rich",
@@ -280,7 +280,7 @@ var allDestinations = [
     },
     {
         name: "Cornwall, United Kingdom",
-        region: "Countryside",
+        region: "land",
         lat: "50.26",
         long: "5.05",
         cost: "rich",
@@ -290,7 +290,7 @@ var allDestinations = [
     },
     {
         name: "Moselle Valley, Germany",
-        region: "Countryside",
+        region: "land",
         lat: "50.40",
         long: "7.60",
         cost: "budget",
@@ -300,7 +300,7 @@ var allDestinations = [
     },
     {
         name: "Glasgow, Scotland",
-        region: "Countryside",
+        region: "land",
         lat: "55.86",
         long: "4.25",
         cost: "rich",
