@@ -1,9 +1,9 @@
 console.log(allDestinations);
-const iconElement =document.querySelector(".weather-icon");
+const iconElement = document.querySelector(".weather-icon");
 const temperatureElement = document.querySelector(".termperature-value p");
 const descriptionElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
-const notificationElement = document.querySelector (".notification");
+const notificationElement = document.querySelector(".notification");
 // var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 let lng;
 let lat;
@@ -87,7 +87,7 @@ function randomChoice() {
     // userInterestedDestinations = [{}, {}, {}]
     var numberOfRemainingDestinations = userInterestedDestinations.length;
     // randomize a number between 0 and numberOfRemainingDestinations
-    
+
     var randomIndex = Math.floor(Math.random(0, numberOfRemainingDestinations));
     console.log(randomIndex);
     // grab the coordinates
@@ -97,16 +97,9 @@ function randomChoice() {
 
     // Call the MAP function and pass the (lat, lng) variables
 }
-    function coord() {
-        
-    }
-
-
-
-
 
 const weather = {};
-weather.temperature ={
+weather.temperature = {
     unit: "celsius"
 }
 
@@ -128,66 +121,67 @@ function searchClick(event) {
 $("#search").on('click', searchClick)
 
 
-if ('geolocation' in navigator){
-navigator.geolocation.getCurrentPosition(setcurrentPosition,showErrorsmessage);
+if ('geolocation' in navigator) {
+    navigator.geolocation.getCurrentPosition(setcurrentPosition, showErrorsmessage);
 
-}else{
+} else {
     notificationElement.style.display = "block";
     notificationElement.innerHTML = "<p>Browser is not enabling Geolocation</p>";
 }
 
-function setcurrentPosition(position){
-    
+function setcurrentPosition(position) {
+
     let latitude = position.coords.latitude;
-    let longitude= position.coords.longitude;
+    let longitude = position.coords.longitude;
     //log user current position
     console.log(position);
     getcurrentWeather(latitude, longitude);
 }
-function showErrorsmessage(error){
+function showErrorsmessage(error) {
     notificationElement.style.display = "block";
-    notificationElement.innerHTML = `<p>${error.message} </p>` ;
+    notificationElement.innerHTML = `<p>${error.message} </p>`;
 }
-function getcurrentWeather(latitude, longitude){
+function getcurrentWeather(latitude, longitude) {
     let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&&appid=b90e2f7f0f7c8c600a56dcebfb43fa9c`;
     console.log(api);
     fetch(api)
-    .then(function(response){
-        let data = response.json();
-        return data;
-    })
-.then(function(data){
-    weather.temperature.value = Math.floor(data.main.temp - KELVIN);
-    weather.description = data.weather[0].description;
-    weather.iconId = data.weather[0].icon;
-     weather.city = data.name;
-     weather.country = data.sys.country;
-})
-.then(function(){
-    displaycurrentWeather();
-});
-// current location weather display fucntion
-function displaycurrentWeather(){
-    iconElement.innerHTML = `<img src="icon/${weather.iconId}.png"/>`;
-    temperatureElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
-descriptionElement.innerHTML = weather.description;
-locationElement.innerHTML = `${weather.city},${weather.country}`;
-}}
-function CtoF(temperature){
-    return(temperature * 9/5) +32;
+        .then(function (response) {
+            let data = response.json();
+            return data;
+        })
+        .then(function (data) {
+            weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+            weather.description = data.weather[0].description;
+            weather.iconId = data.weather[0].icon;
+            weather.city = data.name;
+            weather.country = data.sys.country;
+        })
+        .then(function () {
+            displaycurrentWeather();
+        });
+    // current location weather display fucntion
+    function displaycurrentWeather() {
+        iconElement.innerHTML = `<img src="icon/${weather.iconId}.png"/>`;
+        temperatureElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+        descriptionElement.innerHTML = weather.description;
+        locationElement.innerHTML = `${weather.city},${weather.country}`;
+    }
+}
+function CtoF(temperature) {
+    return (temperature * 9 / 5) + 32;
 }
 // click on C to F function
-temperatureElement.addEventListener("click", function(x){
-if(weather.termperature.value === undefined) return;
+// temperatureElement.addEventListener("click", function (x) {
+//     if (weather.termperature.value === undefined) return;
 
-if(weather.temperature.unit == "celsius"){
-    let fahrenheit = CtoF(weather.temperature.value);
-    fahrenheit = Math.floor(fahrenheit);
-    temperatureElement.innerHTML = `${fahrenheit}°<span>F</span>`;
-    weather.temperature.unit = "fahrenheit";
-}else{
-    temperatureElement.innerHTML = `${weather.temperature.value}'<span>C</span>`;
-    weather.temperature.unit = "celsius"
-}
-})
+//     if (weather.temperature.unit == "celsius") {
+//         let fahrenheit = CtoF(weather.temperature.value);
+//         fahrenheit = Math.floor(fahrenheit);
+//         temperatureElement.innerHTML = `${fahrenheit}°<span>F</span>`;
+//         weather.temperature.unit = "fahrenheit";
+//     } else {
+//         temperatureElement.innerHTML = `${weather.temperature.value}'<span>C</span>`;
+//         weather.temperature.unit = "celsius"
+//     }
+// })
 
