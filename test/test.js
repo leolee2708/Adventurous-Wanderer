@@ -171,17 +171,17 @@ function CtoF(temperature) {
     return (temperature * 9 / 5) + 32;
 }
 // click on C to F function
-// temperatureElement.addEventListener("click", function (x) {
-//     if (weather.termperature.value === undefined) return;
+temperatureElement.addEventListener("click", function (x) {
+    if (weather.termperature.value === undefined) return;
 
-//     if (weather.temperature.unit == "celsius") {
-//         let fahrenheit = CtoF(weather.temperature.value);
-//         fahrenheit = Math.floor(fahrenheit);
-//         temperatureElement.innerHTML = `${fahrenheit}°<span>F</span>`;
-//         weather.temperature.unit = "fahrenheit";
-//     } else {
-//         temperatureElement.innerHTML = `${weather.temperature.value}'<span>C</span>`;
-//         weather.temperature.unit = "celsius"
-//     }
-// })
+    if (weather.temperature.unit == "celsius") {
+        let fahrenheit = CtoF(weather.temperature.value);
+        fahrenheit = Math.floor(fahrenheit);
+        temperatureElement.innerHTML = `${fahrenheit}°<span>F</span>`;
+        weather.temperature.unit = "fahrenheit";
+    } else {
+        temperatureElement.innerHTML = `${weather.temperature.value}'<span>C</span>`;
+        weather.temperature.unit = "celsius"
+    }
+})
 

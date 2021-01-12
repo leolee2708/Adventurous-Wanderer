@@ -211,8 +211,8 @@ var allDestinations = [
     {
         name: "Stowe, Vermont",
         region: "land",
-        lat: "44.46",
-        long: "72.68",
+        lat: "44.4656",
+        long: "72.6874",
         cost: "budget",
         isCold: true,
         isHot: true,
@@ -221,8 +221,8 @@ var allDestinations = [
     {
         name: "Isle of Mull, Scotland",
         region: "land",
-        lat: "56°37",
-        long: "76°04",
+        lat: "56°4392",
+        long: "6.0009",
         cost: "rich",
         isCold: true,
         isHot: false,
@@ -231,8 +231,8 @@ var allDestinations = [
     {
         name: "Bali, Indonesia",
         region: "land",
-        lat: "8.34",
-        long: "115.09",
+        lat: "8.3405",
+        long: "115.0920",
         cost: "rich",
         isCold: false,
         isHot: true,
@@ -241,9 +241,9 @@ var allDestinations = [
     {
         name: "Carlingford, Ireland",
         region: "land",
-        lat: "54.04",
-        long: "6.19",
-        cost: "rich",
+        lat: "54.0469",
+        long: "6.1902",
+        cost: "budget",
         isCold: true,
         isHot: false,
         activities: ["hike", "bike", "swim"]
@@ -251,9 +251,9 @@ var allDestinations = [
     {
         name: "Saratoga, Wyoming",
         region: "land",
-        lat: "41.45",
-        long: "106.80",
-        cost: "budget",
+        lat: "41.4550",
+        long: "106.8064",
+        cost: "cheap",
         isCold: true,
         isHot: true,
         activities: ["hike", "bike", "swim", "romance", "culture"]
@@ -261,8 +261,8 @@ var allDestinations = [
     {
         name: "Napa, California",
         region: "land",
-        lat: "38.29",
-        long: "122.28",
+        lat: "38.2975",
+        long: "122.2869",
         cost: "rich",
         isCold: true,
         isHot: true,
@@ -271,9 +271,9 @@ var allDestinations = [
     {
         name: "Essex, United Kingdom",
         region: "land",
-        lat: "51.57",
-        long: "0.48",
-        cost: "rich",
+        lat: "51.5742",
+        long: "0.4857",
+        cost: "cheap",
         isCold: true,
         isHot: false,
         activities: ["bike", "romance", "culture"]
@@ -281,8 +281,8 @@ var allDestinations = [
     {
         name: "Cornwall, United Kingdom",
         region: "land",
-        lat: "50.26",
-        long: "5.05",
+        lat: "50.2660",
+        long: "5.0527",
         cost: "rich",
         isCold: true,
         isHot: false,
@@ -291,8 +291,8 @@ var allDestinations = [
     {
         name: "Moselle Valley, Germany",
         region: "land",
-        lat: "50.40",
-        long: "7.60",
+        lat: "50.4000",
+        long: "7.6000",
         cost: "budget",
         isCold: true,
         isHot: false,
@@ -301,8 +301,8 @@ var allDestinations = [
     {
         name: "Glasgow, Scotland",
         region: "land",
-        lat: "55.86",
-        long: "4.25",
+        lat: "55.8642",
+        long: "4.2518",
         cost: "rich",
         isCold: true,
         isHot: false,
@@ -355,7 +355,7 @@ var allDestinations = [
         region: "mountain",
         lat: "47.33° N",
         long: "13.38° E",
-        cost: "rich",
+        cost: "cheap",
         isCold: true,
         isHot: false,
         activities: ["shopping", "mic", "hike", "bike", "love"]
@@ -365,7 +365,7 @@ var allDestinations = [
         region: "mountain",
         lat: "46.6406° N",
         long: "11.6849° E",
-        cost: "rich",
+        cost: "budget",
         isCold: false,
         isHot: true,
         activities: ["mic", "bike", "love"]
