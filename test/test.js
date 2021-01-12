@@ -1,5 +1,9 @@
 console.log(allDestinations);
-
+const iconElement =document.querySelector(".weather-icon");
+const temperatureElement = document.querySelector(".termperature-value p");
+const descriptionElement = document.querySelector(".temperature-description p");
+const locationElement = document.querySelector(".location p");
+const notificationElement = document.querySelector (".notification");
 // var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 let lng;
 let lat;
@@ -101,6 +105,14 @@ function randomChoice() {
 
 
 
+const weather = {};
+weather.temperature ={
+    unit: "celsius"
+}
+
+
+const KELVIN = 273;
+const APPIDkey = "b90e2f7f0f7c8c600a56dcebfb43fa9c"
 
 function searchClick(event) {
     if (!lat || !lng) {
@@ -116,12 +128,66 @@ function searchClick(event) {
 $("#search").on('click', searchClick)
 
 
-    // L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYW1hbmRhbG40MzExIiwiYSI6ImNranFvNWI4MjNnMHoyem1wNXNlcmxxYXkifQ.2bLq2cmQPF47IqkhJYsysg', {
-//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-//     maxZoom: 18,
-//     id: 'mapbox/streets-v11',
-//     tileSize: 512,
-//     zoomOffset: -1,
-//     accessToken: 'pk.eyJ1IjoiYW1hbmRhbG40MzExIiwiYSI6ImNranFvNWI4MjNnMHoyem1wNXNlcmxxYXkifQ.2bLq2cmQPF47IqkhJYsysg'
-// }).addTo(mymap);
+if ('geolocation' in navigator){
+navigator.geolocation.getCurrentPosition(setcurrentPosition,showErrorsmessage);
+
+}else{
+    notificationElement.style.display = "block";
+    notificationElement.innerHTML = "<p>Browser is not enabling Geolocation</p>";
+}
+
+function setcurrentPosition(position){
+    
+    let latitude = position.coords.latitude;
+    let longitude= position.coords.longitude;
+    //log user current position
+    console.log(position);
+    getcurrentWeather(latitude, longitude);
+}
+function showErrorsmessage(error){
+    notificationElement.style.display = "block";
+    notificationElement.innerHTML = `<p>${error.message} </p>` ;
+}
+function getcurrentWeather(latitude, longitude){
+    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&&appid=b90e2f7f0f7c8c600a56dcebfb43fa9c`;
+    console.log(api);
+    fetch(api)
+    .then(function(response){
+        let data = response.json();
+        return data;
+    })
+.then(function(data){
+    weather.temperature.value = Math.floor(data.main.temp - KELVIN);
+    weather.description = data.weather[0].description;
+    weather.iconId = data.weather[0].icon;
+     weather.city = data.name;
+     weather.country = data.sys.country;
+})
+.then(function(){
+    displaycurrentWeather();
+});
+// current location weather display fucntion
+function displaycurrentWeather(){
+    iconElement.innerHTML = `<img src="icon/${weather.iconId}.png"/>`;
+    temperatureElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
+descriptionElement.innerHTML = weather.description;
+locationElement.innerHTML = `${weather.city},${weather.country}`;
+}}
+function CtoF(temperature){
+    return(temperature * 9/5) +32;
+}
+// click on C to F function
+temperatureElement.addEventListener("click", function(x){
+if(weather.termperature.value === undefined) return;
+
+if(weather.temperature.unit == "celsius"){
+    let fahrenheit = CtoF(weather.temperature.value);
+    fahrenheit = Math.floor(fahrenheit);
+    temperatureElement.innerHTML = `${fahrenheit}°<span>F</span>`;
+    weather.temperature.unit = "fahrenheit";
+}else{
+    temperatureElement.innerHTML = `${weather.temperature.value}'<span>C</span>`;
+    weather.temperature.unit = "celsius"
+}
+})
 
