@@ -1,8 +1,9 @@
 console.log(allDestinations);
 const iconElement =document.querySelector(".weather-icon");
-const temperatureElement = document.querySelector(".termperature-value p");
+const temperatureElement = document.querySelector(".temperature-value p");
 const descriptionElement = document.querySelector(".temperature-description p");
 const locationElement = document.querySelector(".location p");
+const windElement = document.querySelector(".wind-speed p");
 const notificationElement = document.querySelector (".notification");
 // var mymap = L.map('mapid').setView([51.505, -0.09], 13);
     let lng;
@@ -142,16 +143,18 @@ function getcurrentWeather(latitude, longitude){
     weather.iconId = data.weather[0].icon;
      weather.city = data.name;
      weather.country = data.sys.country;
+     weather.wind= data.wind.speed;
 })
 .then(function(){
     displaycurrentWeather();
 });
 // current location weather display fucntion
 function displaycurrentWeather(){
-    iconElement.innerHTML = `<img src="icon/${weather.iconId}.png"/>`;
+    iconElement.innerHTML = `<img src="icon/${weather.icon}.png"/>`;
     temperatureElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
 descriptionElement.innerHTML = weather.description;
 locationElement.innerHTML = `${weather.city},${weather.country}`;
+windElement.innerHTML = `${weather.wind}`
 }}
 function CtoF(temperature){
     return(temperature * 9/5) +32;
