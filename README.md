@@ -11,7 +11,5 @@ This application will utilize API from 3 sources: empty, empty, openweather.com 
 
 #### Demo
 
-pics here
-or 
-gifs here
-
+![Homepage](./assets/images/homepage.png)
+![Homepage Map](./assets/images/homemap.png)
