@@ -24,6 +24,7 @@ const notificationElement = document.querySelector(".notification");
 // var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 let lng;
 let lat;
+let name;
 
 
 
@@ -112,7 +113,10 @@ function randomChoice() {
     // grab the coordinates
     lat = userInterestedDestinations[randomIndex].lat
     lng = userInterestedDestinations[randomIndex].long
-    console.log(lng, lat);
+    console.log(long, lat);
+    $("#demo").text(JSON.stringify(lat));
+    $("#demo").text(JSON.stringify(long));
+    
 
     // Call the MAP function and pass the (lat, lng) variables
 }
