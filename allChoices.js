@@ -20,7 +20,7 @@ var allDestinations = [
         region: "beach",
         lat: "50.2246° N",
         long: "3.7846° W",
-        cost: "rich",
+        cost: "budget",
         isCold: true,
         isHot: false,
         activities: ["mic", "hike", "bike", "swim"]
@@ -30,7 +30,7 @@ var allDestinations = [
         region: "beach",
         lat: "25.5070° N",
         long: "76.6321 W",
-        cost: "budget",
+        cost: "cheap",
         isCold: false,
         isHot: true,
         activities: ["hike", "bike", "swim", "culture"]
@@ -85,7 +85,7 @@ var allDestinations = [
         region: "beach",
         lat: "4.3715 S",
         long: "55.8272 E",
-        cost: "budget",
+        cost: "cheap",
         isCold: false,
         isHot: true,
         activities: ["mic", "hike", "bike", "swim", "culture"]
@@ -181,7 +181,7 @@ var allDestinations = [
         region: "city",
         lat: "55.7558° N",
         long: "37.6173° E",
-        cost: "rich",
+        cost: "budget",
         isCold: true,
         isHot: false,
         activities: ["shopping", "dance", "culture", "bike"]
@@ -192,7 +192,7 @@ var allDestinations = [
         region: "city",
         lat: "47.0502° N",
         long: "8.3093° E",
-        cost: "rich",
+        cost: "cheap",
         isCold: true,
         isHot: false,
         activities: ["mic", "hike", "bike", "swim"]
@@ -210,7 +210,7 @@ var allDestinations = [
     // COUNTRYSIDE starts
     {
         name: "Stowe, Vermont",
-        region: "Countryside",
+        region: "land",
         lat: "44.46",
         long: "72.68",
         cost: "budget",
@@ -220,7 +220,7 @@ var allDestinations = [
     },
     {
         name: "Isle of Mull, Scotland",
-        region: "Countryside",
+        region: "land",
         lat: "56°37",
         long: "76°04",
         cost: "rich",
@@ -230,7 +230,7 @@ var allDestinations = [
     },
     {
         name: "Bali, Indonesia",
-        region: "Countryside",
+        region: "land",
         lat: "8.34",
         long: "115.09",
         cost: "rich",
@@ -240,7 +240,7 @@ var allDestinations = [
     },
     {
         name: "Carlingford, Ireland",
-        region: "Countryside",
+        region: "land",
         lat: "54.04",
         long: "6.19",
         cost: "rich",
@@ -250,7 +250,7 @@ var allDestinations = [
     },
     {
         name: "Saratoga, Wyoming",
-        region: "Countryside",
+        region: "land",
         lat: "41.45",
         long: "106.80",
         cost: "budget",
@@ -260,7 +260,7 @@ var allDestinations = [
     },
     {
         name: "Napa, California",
-        region: "Countryside",
+        region: "land",
         lat: "38.29",
         long: "122.28",
         cost: "rich",
@@ -270,7 +270,7 @@ var allDestinations = [
     },
     {
         name: "Essex, United Kingdom",
-        region: "Countryside",
+        region: "land",
         lat: "51.57",
         long: "0.48",
         cost: "rich",
@@ -280,7 +280,7 @@ var allDestinations = [
     },
     {
         name: "Cornwall, United Kingdom",
-        region: "Countryside",
+        region: "land",
         lat: "50.26",
         long: "5.05",
         cost: "rich",
@@ -290,7 +290,7 @@ var allDestinations = [
     },
     {
         name: "Moselle Valley, Germany",
-        region: "Countryside",
+        region: "land",
         lat: "50.40",
         long: "7.60",
         cost: "budget",
@@ -300,7 +300,7 @@ var allDestinations = [
     },
     {
         name: "Glasgow, Scotland",
-        region: "Countryside",
+        region: "land",
         lat: "55.86",
         long: "4.25",
         cost: "rich",
@@ -325,7 +325,7 @@ var allDestinations = [
         region: "mountain",
         lat: "50.1163° N",
         long: "122.9574° W",
-        cost: "Budget",
+        cost: "budget",
         isCold: true,
         isHot: false,
         activities: ["shopping", "culture", "hike", "bike"]
