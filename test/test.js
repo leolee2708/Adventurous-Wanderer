@@ -83,16 +83,19 @@ function randomChoice() {
     // userInterestedDestinations = [{}, {}, {}]
     var numberOfRemainingDestinations = userInterestedDestinations.length;
     // randomize a number between 0 and numberOfRemainingDestinations
-    // idk the syntax and store it to a var randomIndex
+    
     var randomIndex = Math.floor(Math.random(0, numberOfRemainingDestinations));
     console.log(randomIndex);
     // grab the coordinates
     lat = userInterestedDestinations[randomIndex].lat
     lng = userInterestedDestinations[randomIndex].long
-    console.log(lat, lng);
+    console.log(lng, lat);
 
     // Call the MAP function and pass the (lat, lng) variables
-    
+    function coord() {
+        
+    }
+
 }
 
 
